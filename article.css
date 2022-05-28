@@ -19,4 +19,47 @@
   justify-content: center;
 }
 
+.article-history {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.editor, .creator {
+  background: #dee8e3;
+  padding: 12px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.editor a, .creator a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 13px;
+  margin-left: 10px;
+  color: #1a8917;
+}
+
+.operation-time {
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.operator-profile {
+  display: flex;
+  align-items: center;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.history a:active {
+  outline: none;
+}
+
+* {
+  outline: none;
+}
+
 /*# sourceMappingURL=article.css.map */
