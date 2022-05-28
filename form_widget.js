@@ -127,10 +127,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 //     }
 // }
 
-    function submitFunction(e) {
-        if (document.activeElement !== document.getElementById('submit')) e.preventDefault();
-    }
-
     inputBox.addEventListener('keyup', (e) => {
         if (inputBox.value.length >= 1) {
             if (e.keyCode === 13) {
@@ -144,6 +140,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
             //     searchTag(inputBox.value);
             // }
         }
+    })
+
+    const publish = document.querySelector('#publish')
+    publish.addEventListener('click',(e)=>{
+        const articleForm = document.querySelector('#article-form');
+        articleForm.submit();
     })
 
     document.addEventListener('click', function (e) {
