@@ -22,6 +22,7 @@
 .article-history {
   display: flex;
   flex-flow: row-reverse;
+  margin-bottom:24px;
 }
 
 .editor, .creator {
